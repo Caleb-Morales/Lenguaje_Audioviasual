@@ -21,6 +21,6 @@ class Pajaro {
 
 class Pinguino extends Pajaro {
     volar() {
-        this.noPuedeVolar(); // Llama al método de la clase base
+        this.noPuedeVolar();
     }
 }
