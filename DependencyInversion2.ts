@@ -22,34 +22,4 @@
 //             return this.db.obtener();
 //         }
 //     }
-// }
-class Configuracion {
-    constructor(public valor: string) {}
-}
-
-class BaseDeDatos {
-    guardar(configuracion: Configuracion): void {
-        console.log(`Guardando configuracion con valor: ${configuracion.valor} en la base de datos`);
-    }
-
-    obtener(): Configuracion {
-        return new Configuracion("valor");
-    }
-}
-
-class GestorConfiguraciones {
-    db: BaseDeDatos;
-
-    constructor() {
-        this.db = new BaseDeDatos();
-    }
-
-    guardarConfiguracion(valor: string): void {
-        const configuracion = new Configuracion(valor);
-        this.db.guardar(configuracion);
-    }
-
-    obtenerConfiguracion(): Configuracion {
-        return this.db.obtener();
-    }
-}
+//
